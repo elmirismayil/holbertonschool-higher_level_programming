@@ -4,6 +4,6 @@ def uniq_add(my_list=[]):
     s = 0
     for i in my_list:
         if i not in u:
-            s += u
+            s += i
             u.append(i)
     return s
