@@ -20,4 +20,3 @@ True
 >>> neg_list = MyList([3, -5, 0])
 >>> neg_list.print_sorted()
 [-5, 0, 3]
-EOF
