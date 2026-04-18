@@ -1,0 +1,23 @@
+cat <<EOF > tests/1-my_list.txt
+The MyList class
+================
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> isinstance(my_list, list)
+True
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> print(my_list)
+[1, 4, 2]
+>>> my_list.print_sorted()
+[1, 2, 4]
+>>> print(my_list)
+[1, 4, 2]
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
+>>> neg_list = MyList([3, -5, 0])
+>>> neg_list.print_sorted()
+[-5, 0, 3]
+EOF
